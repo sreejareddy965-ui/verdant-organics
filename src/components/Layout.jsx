@@ -138,7 +138,7 @@ function Footer() {
 export default function Layout({ children }) {
   return (
     <>
-      <div className="announce"><Link to="/shipping-delivery">Free delivery on orders above ₹699 • Fresh harvest delivered in 24–48 hrs</Link></div>
+      <div className="announce"><Link to="/shipping-delivery">Fresh harvest delivered in 24–48 hrs</Link></div>
       <Header />
       <main>{children}</main>
       <Footer />
