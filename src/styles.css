@@ -5,8 +5,7 @@
   --cream: #f6f3ea;
   --ink: #1b2a20;
   --muted: #5d6b60;
-  --line: #d9d4c3;
-  --serif: 'Fraunces', Georgia, serif;
+--line: #d9d4c3;  --serif: 'Fraunces', Georgia, serif;
   --sans: 'DM Sans', system-ui, sans-serif;
 }
 *, *::before, *::after { box-sizing: border-box; }
@@ -65,8 +64,8 @@ p { margin: 0 0 1em; }
 .draft { background: #efe3b8; color: #5a4a10; font-size: .75rem; padding: .1rem .5rem; border-radius: 4px; margin-right: .4rem; }
 
 /* hero */
-.hero { background-size: cover; background-position: center; color: #fff; min-height: min(86vh, 720px); display: flex; align-items: flex-end; }
-.hero-copy { padding: 5rem 0 4rem; max-width: 760px; margin-left: max(1.25rem, calc((100% - 1200px) / 2)); }
+.hero { background-size: cover; background-position: center; color: #fff; min-height: clamp(520px, 75vh, 680px); display: flex; align-items: center; }
+.hero-copy { padding: 5rem 0; max-width: 760px; margin-left: max(1.25rem, calc((100% - 1200px) / 2)); }
 .hero h1 { margin-bottom: .4em; }
 .hero .lead { color: #eaf2e7; }
 
