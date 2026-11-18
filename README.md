@@ -1,4 +1,4 @@
-# Verdant — Fresh Organic Groceries (React)
+# Verdant — Fresh Organic Groceries 
 
 A React + Vite recreation of the Verdant Framer site: home, shop with filters, product pages, weekly boxes, a working basket drawer, FAQ, contact, and policy pages.
 
