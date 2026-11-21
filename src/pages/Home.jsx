@@ -2,6 +2,19 @@ import { Link } from 'react-router-dom'
 import { HERO_IMG, categories, products, faqs } from '../data.js'
 import ProductCard from '../components/ProductCard.jsx'
 import Newsletter from '../components/Newsletter.jsx'
+import dairy from "../assets/images/Categories/Dairy-verdant.webp";
+import grains from "../assets/images/Categories/Grains- verdant.webp";
+import herbs from "../assets/images/Categories/Herbs-Verdant.webp";
+import fruits from "../assets/images/Categories/image.png";
+import vegetables from "../assets/images/Categories/Vegtables-Verdant.webp";
+
+const categoryImages = {
+  Fruits: fruits,
+  Vegetables: vegetables,
+  Grains: grains,
+  Dairy: dairy,
+  Herbs: herbs,
+};
 
 const steps = [
   ['Choose your basket', 'Pick individual favourites or start with a weekly box. Clear pack sizes help you order just what you need.'],
@@ -38,13 +51,22 @@ export default function Home() {
         <p className="kicker">Shop by season</p>
         <h2>Good food starts with the season.</h2>
         <div className="cats">
-          {categories.map((c) => (
-            <Link key={c.name} to={`/shop?category=${c.name}`} className="cat-tile" style={{ background: c.tone }}>
-              <h3>{c.name}</h3>
-              <span>{c.tag}</span>
-            </Link>
-          ))}
-        </div>
+  {categories.map((c) => (
+    <Link
+  key={c.name}
+  to={`/shop?category=${c.name}`}
+  className="cat-tile"
+  style={{
+    backgroundImage: `url(${categoryImages[c.name]})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* <h3>{c.name}</h3>
+  <span>{c.tag}</span> */}
+</Link>
+  ))}
+</div>
       </section>
 
       <section className="section wrap">

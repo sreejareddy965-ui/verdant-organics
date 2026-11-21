@@ -2,11 +2,12 @@ export const HERO_IMG = 'https://framerusercontent.com/images/FDMlNxnCayn4NUoeER
 export const FREE_DELIVERY_MIN = 699
 
 export const categories = [
-  { name: 'Fruits', tag: 'Sun-ripened picks', tone: '#e9b44c' },
-  { name: 'Vegetables', tag: 'Daily greens', tone: '#8fb27a' },
-  { name: 'Grains', tag: 'Pantry foundations', tone: '#d3b27a' },
-  { name: 'Dairy', tag: 'Fresh and cultured', tone: '#e2dcc8' },
-  { name: 'Herbs', tag: 'Fragrant finishing', tone: '#6f9a68' },
+  { name: 'Fruits', tag: 'Sun-ripened picks', tone: '#e9b44c', image: 'Fruits' },
+  { name: 'Vegetables', tag: 'Daily greens', tone: '#8fb27a', image: 'Vegetables' },
+  { name: 'Grains', tag: 'Pantry foundations', tone: '#d3b27a', image: 'Grains' },
+  { name: 'Dairy', tag: 'Fresh and cultured', tone: '#e2dcc8', image: 'Dairy' },
+  { name: 'Herbs', tag: 'Fragrant finishing', tone: '#6f9a68', image: 'Herbs' },
+   
 ]
 
 export const products = [

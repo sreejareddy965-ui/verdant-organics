@@ -74,8 +74,11 @@ p { margin: 0 0 1em; }
 
 /* categories */
 .cats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin-top: 2rem; }
-.cat-tile { aspect-ratio: 3/4; border-radius: 14px; padding: 1.2rem; display: flex; flex-direction: column; justify-content: flex-end; color: var(--ink); transition: transform .25s; }
-.cat-tile:hover { transform: translateY(-4px); }
+.cat-tile { aspect-ratio: 3/4; border-radius: 14px; padding: 1.2rem; display: flex; flex-direction: column; justify-content: flex-end; color: var(--ink); transition: transform .25s; background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+.cat-tile:hover { transform: translateY(-4px); } 
 .cat-tile h3 { margin: 0; font-size: 1.5rem; }
 .cat-tile span { font-size: .9rem; opacity: .8; }
 
