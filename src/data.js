@@ -3,6 +3,9 @@ import avocadoHarvestBox from "./assets/images/Products/Avocado Harvest Box.png"
 import morningGrainMilk from "./assets/images/Products/Morning Grain & Milk.png";
 import wildflowerHerbMix from "./assets/images/Products/Wildflower Herb Mix.png";
 import freshFruitMedley from "./assets/images/Products/Fresh Fruit Medley.png";
+import weeklyMarketBox from "./assets/images/Products/Weekly Market Box.png";
+import citrusImmunityPack from "./assets/images/Products/Citrus Immunity Pack.png";
+import heirloomGarlicSet from "./assets/images/Products/Heirloom Garlic Set.png";
 export const HERO_IMG = 'https://framerusercontent.com/images/FDMlNxnCayn4NUoeERx4M6IilPQ.jpg?width=2400&height=1600'
 export const FREE_DELIVERY_MIN = 699
 
@@ -39,14 +42,34 @@ export const products = [
   { slug: 'morning-grain-milk', name: 'Morning Grain & Milk', category: 'Grains', size: '500 g grains + 500 ml milk', price: 390,
   desc: 'Organic grains paired with fresh dairy for slow, nourishing mornings.',
   image: morningGrainMilk },
-  { slug: 'heirloom-garlic-set', name: 'Heirloom Garlic Set', category: 'Vegetables', size: '500 g', price: 240, rating: 0,
-    desc: 'Aromatic garlic bulbs cured naturally for deep, clean flavor.' },
-  { slug: 'citrus-immunity-pack', name: 'Citrus Immunity Pack', category: 'Fruits', size: '1.5 kg pack', price: 460, rating: 0,
-    desc: 'Bright seasonal citrus selected for juice, zest, and snacking.' },
-  { slug: 'weekly-market-box', name: 'Weekly Market Box', category: 'Mixed', size: '4 kg weekly box', price: 899, rating: 0,
-    desc: 'A chef-curated weekly mix of produce, pantry staples, and herbs.' },
-  { slug: 'fresh-fruit-medley', name: 'Fresh Fruit Medley', category: 'Fruits', size: '500 g prepared pack', price: 350, rating: 0,
-    desc: 'Naturally sweet sliced fruits for breakfasts, bowls, and desserts.' },
+  {
+    slug: 'heirloom-garlic-set',
+    name: 'Heirloom Garlic Set',
+    category: 'Vegetables',
+    size: '500 g',
+    price: 240,
+    desc: '...', // keep your existing description here
+    image: heirloomGarlicSet,
+  },
+  {
+    slug: 'citrus-immunity-pack',
+    name: 'Citrus Immunity Pack',
+    category: 'Fruits',
+    size: '1.5 kg pack',
+    price: 460,
+    desc: '...', // keep your existing description here
+    image: citrusImmunityPack,
+  },
+  {
+    slug: 'weekly-market-box',
+    name: 'Weekly Market Box',
+    category: 'Mixed',
+    size: '4 kg weekly box',
+    price: 899,
+    desc: '...', // keep your existing description here
+    image: weeklyMarketBox,
+  },
+ 
 ]
 
 export const toneFor = (cat) => (categories.find((c) => c.name === cat)?.tone ?? '#a7b99a')
