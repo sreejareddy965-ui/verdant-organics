@@ -15,7 +15,7 @@ import weeklyVegetables from "../assets/weekly-box/Veggies.png";
 import weeklyFruits from "../assets/weekly-box/Fruits.png";
 import weeklyPantry from "../assets/weekly-box/Pantry.png";
 import weeklyHerbs from "../assets/weekly-box/Herbs.png";
-import weeklyBox from "../assets/weekly-box/Brand-Verdant.png";
+import weeklyBox from "../assets/weekly-box/Brand-verdant.png";
 
 
 const categoryImages = {
