@@ -1,5 +1,11 @@
+import gardenBowlBundle from "./assets/images/Products/Garden Bowl Bundle.png";
+import avocadoHarvestBox from "./assets/images/Products/Avocado Harvest Box.png";
+import morningGrainMilk from "./assets/images/Products/Morning Grain & Milk.png";
+import wildflowerHerbMix from "./assets/images/Products/Wildflower Herb Mix.png";
+import freshFruitMedley from "./assets/images/Products/Fresh Fruit Medley.png";
 export const HERO_IMG = 'https://framerusercontent.com/images/FDMlNxnCayn4NUoeERx4M6IilPQ.jpg?width=2400&height=1600'
 export const FREE_DELIVERY_MIN = 699
+
 
 export const categories = [
   { name: 'Fruits', tag: 'Sun-ripened picks', tone: '#e9b44c', image: 'Fruits' },
@@ -11,17 +17,28 @@ export const categories = [
 ]
 
 export const products = [
-  { slug: 'avocado-harvest-box', name: 'Avocado Harvest Box', category: 'Fruits', size: '1.25 kg box', price: 649, rating: 0,
+  {
+    slug: 'avocado-harvest-box',
+    name: 'Avocado Harvest Box',
+    category: 'Fruits',
+    size: '1.25 kg box',
+    price: 649,
     desc: 'Hand-selected avocado, tomatoes, greens, and seasonal staples.',
-    image: 'https://framerusercontent.com/images/mLc6jgV96AFBECfVqsOG2YsIvI.jpg?width=900&height=900',
-    inside: 'DRAFT — 2 avocados (approximately 400 g), tomatoes 500 g, salad greens 250 g, lemons 100 g.',
-    storage: 'DRAFT — Keep greens refrigerated; ripen avocados at room temperature, then refrigerate.', shelf: 'DRAFT — 2–4 days after delivery' },
-  { slug: 'garden-bowl-bundle', name: 'Garden Bowl Bundle', category: 'Vegetables', size: '2 kg bundle', price: 520, rating: 0,
-    desc: 'A crisp mix of daily vegetables for salads, sautés, and soups.' },
-  { slug: 'wildflower-herb-mix', name: 'Wildflower Herb Mix', category: 'Herbs', size: '100 g pack', price: 280, rating: 0,
-    desc: 'Fragrant herbs and edible florals grown without synthetic sprays.' },
-  { slug: 'morning-grain-milk', name: 'Morning Grain & Milk', category: 'Grains', size: '500 g grains + 500 ml milk', price: 390, rating: 0,
-    desc: 'Organic grains paired with fresh dairy for slow, nourishing mornings.' },
+    image: avocadoHarvestBox,
+    inside: 'DRAFT – 2 avocados (approximately 400 g), tomatoes 500 g, salad greens 250 g, ...',
+    storage: 'DRAFT – Keep greens refrigerated; ripen avocados at room temperature, then refrigerate.',
+  },
+  {slug: 'garden-bowl-bundle', name: 'Garden Bowl Bundle', category: 'Vegetables', size: '2 kg bundle', price: 520,
+  desc: 'A crisp mix of daily vegetables for salads, sautés, and soups.',
+  image: gardenBowlBundle },
+  { slug: 'wildflower-herb-mix', name: 'Wildflower Herb Mix', category: 'Herbs', size: '100 g pack', price: 280,
+  desc: 'Fragrant herbs and edible florals grown without synthetic sprays.',
+  image: wildflowerHerbMix },
+    { slug: 'fresh-fruit-medley', name: 'Fresh Fruit Medley', category: 'Fruits', size: '500 g prepared pack', price: 350,
+  desc: '...', image: freshFruitMedley },
+  { slug: 'morning-grain-milk', name: 'Morning Grain & Milk', category: 'Grains', size: '500 g grains + 500 ml milk', price: 390,
+  desc: 'Organic grains paired with fresh dairy for slow, nourishing mornings.',
+  image: morningGrainMilk },
   { slug: 'heirloom-garlic-set', name: 'Heirloom Garlic Set', category: 'Vegetables', size: '500 g', price: 240, rating: 0,
     desc: 'Aromatic garlic bulbs cured naturally for deep, clean flavor.' },
   { slug: 'citrus-immunity-pack', name: 'Citrus Immunity Pack', category: 'Fruits', size: '1.5 kg pack', price: 460, rating: 0,
