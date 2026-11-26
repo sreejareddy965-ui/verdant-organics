@@ -11,7 +11,7 @@ import fruits from "../assets/images/Categories/image.png";
 import vegetables from "../assets/images/Categories/Vegtables-Verdant.webp";
 
 // Weekly box images
-import weeklyVegetables from "../assets/weekly-box/veggies.png";
+import weeklyVegetables from "../assets/weekly-box/Veggies.png";
 import weeklyFruits from "../assets/weekly-box/Fruits.png";
 import weeklyPantry from "../assets/weekly-box/Pantry.png";
 import weeklyHerbs from "../assets/weekly-box/Herbs.png";
