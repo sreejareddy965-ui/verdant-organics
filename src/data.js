@@ -37,8 +37,15 @@ export const products = [
   { slug: 'wildflower-herb-mix', name: 'Wildflower Herb Mix', category: 'Herbs', size: '100 g pack', price: 280,
   desc: 'Fragrant herbs and edible florals grown without synthetic sprays.',
   image: wildflowerHerbMix },
-    { slug: 'fresh-fruit-medley', name: 'Fresh Fruit Medley', category: 'Fruits', size: '500 g prepared pack', price: 350,
-  desc: '...', image: freshFruitMedley },
+    {
+    slug: 'fresh-fruit-medley',
+    name: 'Fresh Fruit Medley',
+    category: 'Fruits',
+    size: '500 g prepared pack',
+    price: 350,
+    desc: 'Ready-to-eat seasonal fruits, freshly cut for effortless snacking and bowls.',
+    image: freshFruitMedley,
+  },
   { slug: 'morning-grain-milk', name: 'Morning Grain & Milk', category: 'Grains', size: '500 g grains + 500 ml milk', price: 390,
   desc: 'Organic grains paired with fresh dairy for slow, nourishing mornings.',
   image: morningGrainMilk },
@@ -48,7 +55,7 @@ export const products = [
     category: 'Vegetables',
     size: '500 g',
     price: 240,
-    desc: '...', // keep your existing description here
+    desc: 'Bright, sun-ripened oranges, lemons, limes, and grapefruit packed with vitamin C.',
     image: heirloomGarlicSet,
   },
   {
@@ -57,7 +64,7 @@ export const products = [
     category: 'Fruits',
     size: '1.5 kg pack',
     price: 460,
-    desc: '...', // keep your existing description here
+    desc: 'A blend of citrus fruits rich in vitamin C to support your immune system.',
     image: citrusImmunityPack,
   },
   {
@@ -66,7 +73,7 @@ export const products = [
     category: 'Mixed',
     size: '4 kg weekly box',
     price: 899,
-    desc: '...', // keep your existing description here
+    desc: 'A curated selection of fresh produce for your weekly shopping needs.',
     image: weeklyMarketBox,
   },
  
