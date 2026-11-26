@@ -2,11 +2,21 @@ import { Link } from 'react-router-dom'
 import { HERO_IMG, categories, products, faqs } from '../data.js'
 import ProductCard from '../components/ProductCard.jsx'
 import Newsletter from '../components/Newsletter.jsx'
+
+// Category images
 import dairy from "../assets/images/Categories/Dairy-verdant.webp";
 import grains from "../assets/images/Categories/Grains- verdant.webp";
 import herbs from "../assets/images/Categories/Herbs-Verdant.webp";
 import fruits from "../assets/images/Categories/image.png";
 import vegetables from "../assets/images/Categories/Vegtables-Verdant.webp";
+
+// Weekly box images
+import weeklyVegetables from "../assets/weekly-box/veggies.png";
+import weeklyFruits from "../assets/weekly-box/Fruits.png";
+import weeklyPantry from "../assets/weekly-box/Pantry.png";
+import weeklyHerbs from "../assets/weekly-box/Herbs.png";
+import weeklyBox from "../assets/weekly-box/brand-Verdant.png";
+
 
 const categoryImages = {
   Fruits: fruits,
@@ -91,16 +101,29 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section wrap split">
-        <div>
-          <h2>One box. A week of possibilities.</h2>
-          <p>Bring a little rhythm to your weekly shop with a seasonal mix of fruit, vegetables and kitchen staples. Choose Small, Medium or Family. Order once, or explore a recurring plan with the flexibility to pause or skip future deliveries.</p>
-          <Link className="btn" to="/weekly-boxes">Explore Weekly Boxes</Link>
-        </div>
-        <div className="box-art" aria-hidden="true">
-          {categories.map((c) => <i key={c.name} style={{ background: c.tone }} />)}
-        </div>
-      </section>
+    <section className="section wrap split">
+  <div>
+    <h2>One box. A week of possibilities.</h2>
+
+    <p>
+      Bring a little rhythm to your weekly shop with a seasonal mix of fruit,
+      vegetables and kitchen staples. Choose Small, Medium or Family. Order once,
+      or explore a recurring plan with the flexibility to pause or skip future deliveries.
+    </p>
+
+    <Link className="btn" to="/weekly-boxes">
+      Explore Weekly Boxes
+    </Link>
+  </div>
+
+  <div className="weekly-box-grid">
+    <img src={weeklyVegetables} alt="Fresh organic vegetables" />
+    <img src={weeklyFruits} alt="Seasonal fruits" />
+    <img src={weeklyPantry} alt="Organic pantry staples" />
+    <img src={weeklyHerbs} alt="Fresh leafy herbs" />
+    <img src={weeklyBox} alt="Verdant Organics weekly box" />
+  </div>
+</section>
 
       <section className="section wrap">
         <p className="kicker">Why choose us</p>
