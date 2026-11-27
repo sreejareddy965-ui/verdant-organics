@@ -402,7 +402,10 @@ header,
 .cat-tile:nth-child(2) { background-size: 114% !important; } /* Vegetables */
 .cat-tile:nth-child(3) { background-size: 112% !important; } /* Grains */
 .cat-tile:nth-child(4) { background-size: 108% !important; } /* Dairy */
-.cat-tile:nth-child(5) { background-size: 128% !important; } /* Herbs */
+.cat-tile:nth-child(5) {
+  background-size: 126% !important;
+  background-position: center 68% !important;
+} /* Herbs */
 
 /* ==========================================================================
    8. Products
