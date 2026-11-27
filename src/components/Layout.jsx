@@ -102,7 +102,13 @@ function Footer() {
     <footer className="footer">
       <div className="wrap footer-grid">
         <div>
-          <img src={logo} alt="Verdant" className="footer-logo" />
+          <Link
+            to="/"
+            className="footer-logo-link"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            <img src={logo} alt="Verdant" className="footer-logo" />
+          </Link>
           <p className="on-dark">Seasonal groceries, freshly packed for everyday living.</p>
         </div>
         <div>
