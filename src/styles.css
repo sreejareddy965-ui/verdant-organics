@@ -220,3 +220,10 @@ header, .site-header { min-height: 84px; }   /* use your header's real class nam
 
 .footer-grid { align-items: start; }   /* all columns start on the same line */
 .footer-logo { margin-left: -12px; }   /* compensates for empty space inside the PNG */
+
+.cat-tile:nth-child(1) { background-size: 114% !important; } /* Fruits */
+.cat-tile:nth-child(2) { background-size: 114% !important; } /* Vegetables */
+.cat-tile:nth-child(3) { background-size: 112% !important; } /* Grains */
+.cat-tile:nth-child(4) { background-size: 108% !important; } /* Dairy */
+
+.cat-tile:nth-child(5) { background-size: 128% !important; } /* Herbs */
