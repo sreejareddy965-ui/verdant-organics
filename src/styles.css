@@ -45,10 +45,6 @@ p { margin: 0 0 1em; }
 
 /* buttons + type bits */
 .btn { display: inline-block; background: var(--green); color: #fff; border: 1px solid var(--green); border-radius: 999px; padding: .75rem 1.5rem; font: inherit; font-weight: 500; cursor: pointer; transition: background .2s, color .2s; }
-.btn:hover { background: var(--green-2); }
-.btn:disabled { opacity: .55; cursor: not-allowed; }
-.btn.sm { padding: .4rem 1.1rem; font-size: .9rem; }
-.btn.light { background: var(--cream); color: var(--green); border-color: var(--cream); }
 .btn.light:hover { background: #fff; }
 .btn.ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.7); }
 .btn.ghost:hover { background: rgba(255,255,255,.14); }
@@ -64,7 +60,7 @@ p { margin: 0 0 1em; }
 .draft { background: #efe3b8; color: #5a4a10; font-size: .75rem; padding: .1rem .5rem; border-radius: 4px; margin-right: .4rem; }
 
 /* hero */
-.hero { background-size: cover; background-position: center; color: #fff; min-height: clamp(520px, 75vh, 680px); display: flex; align-items: center; }
+.hero { background-size: cover; background-position: center; color: #fff; min-height: clamp(520px, 75vh, 600px); display: flex; align-items: center; }
 .hero-copy { padding: 5rem 0; max-width: 760px; margin-left: max(1.25rem, calc((100% - 1200px) / 2)); }
 .hero h1 { margin-bottom: .4em; }
 .hero .lead { color: #eaf2e7; }
@@ -208,3 +204,19 @@ p { margin: 0 0 1em; }
   .news { flex-direction: column; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+.logo-img { height: 64px; width: auto; display: block; margin-left: -34px; }
+header, .site-header { min-height: 84px; }   /* use your header's real class name */
+.wrap footer-grid { align-items: start; }
+
+
+.footer-logo {
+  height: 64px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);   /* makes the whole logo white */
+  margin-bottom: 16px;
+  margin-left: -16px;  /* adjust as needed to center the logo */
+}
+
+.footer-grid { align-items: start; }   /* all columns start on the same line */
+.footer-logo { margin-left: -12px; }   /* compensates for empty space inside the PNG */

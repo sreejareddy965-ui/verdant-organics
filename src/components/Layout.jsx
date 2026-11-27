@@ -1,3 +1,4 @@
+import logo from '../assets/images/Verdant Organics Botanical Logo.png'
 import { useState } from 'react'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { useCart } from '../CartContext.jsx'
@@ -32,7 +33,9 @@ function Header() {
   return (
     <header className="header">
       <div className="wrap header-row">
-        <Link to="/" className="logo" onClick={() => setMenu(false)}>Verdant</Link>
+        <Link to="/" className="logo" aria-label="Verdant home">
+  <img src={logo} alt="Verdant" className="logo-img" />
+</Link>
         <nav className={'nav' + (menu ? ' open' : '')}>
           {nav.map(([to, label]) =>
             to === '#categories' ? (
@@ -99,7 +102,7 @@ function Footer() {
     <footer className="footer">
       <div className="wrap footer-grid">
         <div>
-          <p className="logo">Verdant</p>
+          <img src={logo} alt="Verdant" className="footer-logo" />
           <p className="on-dark">Seasonal groceries, freshly packed for everyday living.</p>
         </div>
         <div>
